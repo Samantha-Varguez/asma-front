@@ -1,0 +1,51 @@
+/* styles.css para el componente Menu */
+.menu-container {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 40px); /* Calcula el ancho como el 100% del ancho menos 40px de margen */
+    max-width: 350px; /* Establece un ancho máximo para el menú */
+    background-color: rgb(10, 161, 199);
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Aumenta la sombra y ajusta la posición vertical */
+    z-index: 1000;
+    display: flex; /* Cambia el diseño a flexbox */
+    flex-direction: row; /* Establece la dirección de los elementos como horizontal */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+    animation: fadeInUp 0.5s ease forwards; /* Agrega una animación al cargar */
+    font-size: 16;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(20);
+    }
+
+}
+
+
+.menu-item {
+    margin-right: 10px; /* Añade un margen derecho entre los elementos */
+    font-size: 20px;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s; /* Transición de 0.3 segundos en el cambio de color de fondo */
+}
+
+.menu-item a:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Cambia el color de fondo al pasar el mouse */
+}

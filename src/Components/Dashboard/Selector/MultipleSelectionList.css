@@ -1,0 +1,117 @@
+.MultipleSelectionList {
+    width: 500px;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 14px;
+    color: black;
+  }
+
+  ::-webkit-scrollbar-button {
+    color: black;
+  }
+
+  .Confirmar {
+    background-color: rgb(83, 157, 212);
+    color: white;
+    border-radius: 10px;
+    border-style: hidden;
+    padding: 10px;
+    position: fixed;
+    top: 80%;
+    left: 60%;
+  }
+
+  .Confirmar :hover{
+    background-color: rgb(5, 18, 151);
+  }
+
+  .list{
+    background-color:#67c7ea;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  .list :hover {
+    background-color:rgb(83, 157, 212);
+  }
+
+  .options{
+    color: red;
+  }
+
+ .SelectedOptions{
+
+    border-color: #000000;
+    border: 2px;
+    font-size: 16px;
+    color: #000000;
+    border-radius: 10px;
+ } 
+
+ .Sintomas{
+margin-top: 15px;
+ }
+
+
+  .search-input input[type=text] {
+    margin-bottom: 10px;
+    border-width: 3px;
+    border-style:hidden;
+    background-color: rgb(10, 161, 199);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    padding-left: 5px;
+    font-size: 20px;
+    color:#ffffff;
+    border-radius: 15px;
+    height: 25px;
+    width: 300px;
+  }
+  
+  .options-list {
+    height: 200px;
+    width: 500px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 100px solid #ccc;
+    border-radius: 5px;
+    overflow-y: auto; /* Enable scrollbar if needed */
+    font-size: 19px;
+  }
+  
+  .SelectedOptions {
+    padding-left: 5px;
+ border-radius: 5px;
+    height: 100px;
+    width: 500px;
+    overflow-y: auto;
+    background-color: #67c7ea;
+  }
+  
+  .SelectedOptions ul {
+    padding: 0;
+    list-style-type: none;
+   
+  }
+  
+  .SelectedOptions li {
+    font-size: 14px;
+
+  }
+  
+  .SelectedOptions button {
+    margin-left: 10px;
+    padding: 5px 5px;
+    border: none;
+    background-color: rgba(7, 105, 170, 0.993);
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .SelectedOptions button:hover {
+    background-color: rgba(5, 18, 151, 0.993);
+  }
