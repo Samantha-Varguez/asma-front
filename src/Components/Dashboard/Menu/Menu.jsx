@@ -1,7 +1,5 @@
 import React from 'react';
 import './Menu.css';
-import Nosotros from '../Nosotros/Nosotros';
-import Contacto from '../Contacto/Contacto';
 
 const Menu = () => {
     return (
@@ -11,10 +9,10 @@ const Menu = () => {
                 <a href="#">Inicio</a>
             </div>
             <div className="menu-item">
-                <Nosotros/>
+                <a href="#">Nosotros</a>
             </div>
             <div className="menu-item">
-                <Contacto/>
+            <a href="#">Contacto</a>
             </div>
             {/* Más elementos de menú aquí */}
         </div>
