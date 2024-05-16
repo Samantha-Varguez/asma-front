@@ -16,9 +16,7 @@ const MainDash = () => {
 
     return (
         <div className="dashboard-container">
-            <Menu />
             <div className="content" >
-                <MultipleSelectionList/>
                 <TabTest/>
                 {/* Contenido del dashboard aquí */}
             </div>

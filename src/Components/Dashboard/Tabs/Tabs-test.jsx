@@ -1,5 +1,6 @@
 import Tabs from "./Tabs";
 import './Tabs.css';
+import MultipleSelectionList from "../Selector/MultipleSelectionList";
 
 function RandomComponent(){
     return <h1>Some random content</h1>
@@ -9,16 +10,16 @@ export default function TabTest(){
 
 const tabs = [
     {
-      label : 'Tab 1',
+      label : 'Inicio',
       content :  <div> This is content for tab 1</div>
     }, 
     {
-        label : 'Tab 2',
+        label : 'Nosotros',
         content :  <div> This is content for tab 2</div>
     }, 
     {
-        label : 'Tab 3',
-        content :  <RandomComponent/>
+        label : 'Contacto',
+        content :  <MultipleSelectionList/>
     }, 
     
 ]
