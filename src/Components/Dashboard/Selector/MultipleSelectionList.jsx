@@ -41,6 +41,7 @@ const MultipleSelectionList = () => {
 
   
   return (
+
     <div className="MultipleSelectionList">
       <div className="search-input">
       <input
@@ -70,9 +71,8 @@ const MultipleSelectionList = () => {
             </li>
           ))}
         </ul>
-
-      <button className="Confirmar"  onClick={() => console.log(selectedOptions)}> Confirmar Sintomas </button>
-      </div>
+        </div>
+      <button className="Confirmar" onClick={() => console.log(selectedOptions)}> Confirmar Sintomas </button>
       </div>
     </div>
   );

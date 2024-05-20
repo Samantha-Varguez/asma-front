@@ -1,5 +1,5 @@
 .wrapper {
-    background: white;
+    background: '../../Assets/dashboard.png';
     position: fixed;
     display: flex;
     width: 100%;
@@ -17,16 +17,18 @@
     height: 100px;
 }
 
+
 .tab{
     border-radius: 20px;
     background-color: rgb(10, 161, 199);
     height: 50px;
-    left: 50%;
+    left: 35%;
     position: fixed;
     padding: 10px 15px;
     backdrop-filter: blur(10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Aumenta la sombra y ajusta la posición vertical */
     display: flex;
+    animation: fadeInUp 0.5s ease forwards; 
 }
 
 
@@ -41,6 +43,7 @@
     color: #fff;
     background-color: rgb(10, 161, 199);
     height: 30px;
+    margin-right: 10px; 
 }
 
 .content{
@@ -53,11 +56,11 @@
     border-color: black;
     background-color: rgb(3, 129, 188);
     color: #fff;
+    border-radius: 5px;
 }
 
 .label {
-
+    align-items: center;
     color: white;
     font-size: 16px;
-    
 }

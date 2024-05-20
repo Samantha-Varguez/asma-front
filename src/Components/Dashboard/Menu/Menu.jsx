@@ -7,6 +7,7 @@ const Menu = () => {
         <div className="menu-container">
             <div className="menu-item">
                 <a href="#">Inicio</a>
+                  {/* Más elementos de menú aquí */}
             </div>
             <div className="menu-item">
                 <a href="#">Nosotros</a>
@@ -14,7 +15,7 @@ const Menu = () => {
             <div className="menu-item">
             <a href="#">Contacto</a>
             </div>
-            {/* Más elementos de menú aquí */}
+          
         </div>
     );
 };

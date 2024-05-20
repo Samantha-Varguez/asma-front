@@ -2,16 +2,13 @@ import Tabs from "./Tabs";
 import './Tabs.css';
 import MultipleSelectionList from "../Selector/MultipleSelectionList";
 
-function RandomComponent(){
-    return <h1>Some random content</h1>
-}
 
 export default function TabTest(){
 
 const tabs = [
     {
       label : 'Inicio',
-      content :  <div> This is content for tab 1</div>
+      content :  <MultipleSelectionList/>
     }, 
     {
         label : 'Nosotros',
@@ -19,7 +16,7 @@ const tabs = [
     }, 
     {
         label : 'Contacto',
-        content :  <MultipleSelectionList/>
+        content :   <div> This is content for tab 3 </div>
     }, 
     
 ]

@@ -8,7 +8,6 @@
     max-width: 350px; /* Establece un ancho máximo para el menú */
     background-color: rgb(10, 161, 199);
     border-radius: 30px;
-    backdrop-filter: blur(10px);
     padding: 20px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Aumenta la sombra y ajusta la posición vertical */
     z-index: 1000;
