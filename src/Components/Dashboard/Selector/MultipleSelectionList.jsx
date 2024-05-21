@@ -67,11 +67,10 @@ const MultipleSelectionList = () => {
         });
 };
 
-  
-  return (
 
-    <div className="MultipleSelectionList">
-      <div className="search-input">
+return (
+  <div className="MultipleSelectionList">
+    <div className="search-input">
       <input
         type="text"
         placeholder="Buscar sintomas"
@@ -80,32 +79,33 @@ const MultipleSelectionList = () => {
       />
     </div>
 
-      <select className="list" multiple={true} onChange={handleSelectOption} style={{ height: '150px', width: '500px', fontSize: '16px'}}>
-        {filteredOptions.map((option, index) => (
-          <option key={index} value={option}>
-            {option}
-          </option>
-        ))}
+    <select className="list" multiple={true} onChange={handleSelectOption} style={{ height: '150px', width: '500px', fontSize: '16px'}}>
+      {filteredOptions.map((option, index) => (
+        <option key={index} value={option}>
+          {option}
+        </option>
+      ))}
+    </select>
 
-      </select>
-  <div className="Sintomas">
-        <h3>Sintomas:</h3>
-        <div className="SelectedOptions">
-          <ul>
-            {selectedOptions.map((option, index) => (
-              <li key={index}>
-                {option}
-                <button className="remover" onClick={() => handleRemoveOption(option)}> X </button>
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div className="confirmar">
-          <button onClick={() => console.log(selectedOptions)}> Confirmar Sintomas </button>
-        </div>
+    <div className="Sintomas">
+      <h3>Sintomas:</h3>
+      <div className="SelectedOptions">
+        <ul>
+          {selectedOptions.map((option, index) => (
+            <li key={index}>
+              {option}
+              <button className="remover" onClick={() => handleRemoveOption(option)}> X </button>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <div className="confirmar">
+        <button onClick={handleSubmit}>Submit</button>
       </div>
     </div>
-  );
+  </div>
+);
 };
 
 export default MultipleSelectionList ;
