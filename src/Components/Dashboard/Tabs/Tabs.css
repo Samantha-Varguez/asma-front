@@ -1,5 +1,8 @@
 .wrapper {
     background: '../../Assets/dashboard.png';
+    image-rendering: -webkit-optimize-contrast;
+    background-size: 100%;
+    opacity: 100%;
     position: fixed;
     display: flex;
     width: 100%;
@@ -47,9 +50,10 @@
 }
 
 .content{
-    height: 500px;
     overflow: auto;
-    background:none;
+    background: '../../Assets/dashboard.png';
+opacity: 100%;
+image-rendering: -webkit-optimize-contrast;
 }
 
 .tab-item.active{

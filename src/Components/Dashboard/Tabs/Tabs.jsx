@@ -22,7 +22,7 @@ export default function Tabs({ tabsContent, onChange }) {
 
     return (
         <div className="wrapper">
-            <img dashboard className="image"></img>
+            
                 <div className="tab">
                     {tabsContent.map((tabItem, index) => (
                         <div className={`tab-item ${currentTabIndex === index ? "active" : ""}`} onClick={() => handleOnClick(index)} key={tabItem.label}>

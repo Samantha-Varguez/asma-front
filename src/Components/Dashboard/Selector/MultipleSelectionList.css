@@ -14,20 +14,15 @@
     color: black;
   }
 
-  .Confirmar button {
-    background-color: rgb(83, 157, 212);
-    border-radius: 10px;
-    border-style: hidden;
+  .confirmar button{
+cursor: pointer;
     padding: 10px;
-    position: fixed;
-    top: 80%;
-    left: 60%;
-    width: 150px;
-    height: 50px;
+    background-color: #67c7ea;
+    color: blue;
   }
 
-  .Confirmar :hover{
-    background-color: rgb(5, 18, 151);
+  .confirmar button:hover{
+    background-color: #3b91d8;
   }
 
   .list{

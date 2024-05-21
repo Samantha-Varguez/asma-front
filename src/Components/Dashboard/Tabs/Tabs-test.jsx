@@ -1,7 +1,8 @@
 import Tabs from "./Tabs";
 import './Tabs.css';
 import MultipleSelectionList from "../Selector/MultipleSelectionList";
-
+import Nosotros from "../Nosotros/Nosotros"
+import Contacto from "../Contacto/Contacto";
 
 export default function TabTest(){
 
@@ -12,17 +13,16 @@ const tabs = [
     }, 
     {
         label : 'Nosotros',
-        content :  <div> This is content for tab 2</div>
+        content :  <Nosotros/>
     }, 
     {
         label : 'Contacto',
-        content :   <div> This is content for tab 3 </div>
+        content : <Contacto/>
     }, 
     
 ]
 
 function handleChange(currentTabIndex){
-    console.log(currentTabIndex);
 }
 
     return <Tabs tabsContent={tabs} onChange={handleChange}/>

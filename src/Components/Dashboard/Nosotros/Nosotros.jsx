@@ -1,25 +1,12 @@
 import React, { useState } from 'react';
 import './Nosotros.css'; // Import CSS file for styling
 
-function Nosotros() {
-  const [visible, setVisible] = useState(false);
-
-  const toggleVisibility = () => {
-    setVisible(!visible);
-  };
+const Nosotros = () => {
 
   return (
-    <div>
-      <button onClick={toggleVisibility}>Nosotros</button>
-      {visible && (
-        <div className="window">
-          <button onClick={toggleVisibility}>Close</button>
-          <div className="content">
-            {/* Content of the window */}
-            <p>Informacion sobre nosotros</p>
-          </div>
-        </div>
-      )}
+    <div className="Contenido">
+            <p>La empresa "" está totalmente a su servicio, ofreciendo una forma de acceder rapidamente a toda 
+              clase de sintomas  </p>
     </div>
   );
 }

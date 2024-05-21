@@ -1,25 +1,11 @@
 import React, { useState } from 'react';
 import './Contacto.css'; // Import CSS file for styling
 
-function Contacto() {
-  const [visible, setVisible] = useState(false);
-
-  const toggleVisibility = () => {
-    setVisible(!visible);
-  };
+const Contacto = () => {
 
   return (
-    <div>
-      <button onClick={toggleVisibility}>Contacto</button>
-      {visible && (
-        <div className="window">
-          <button onClick={toggleVisibility}>Close</button>
-          <div className="content">
-            {/* Content of the window */}
-            <p>Informacion sobre nosotros</p>
-          </div>
-        </div>
-      )}
+    <div className="Contenido">
+            <p> Telefono : 272 555 3958 </p>
     </div>
   );
 }
