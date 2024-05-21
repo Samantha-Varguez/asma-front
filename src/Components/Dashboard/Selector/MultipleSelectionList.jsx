@@ -29,8 +29,6 @@ const MultipleSelectionList = () => {
     }
   };
 
-  
-
   const handleRemoveOption = (option) => {
     setSelectedOptions(selectedOptions.filter((item) => item !== option)); 
   };

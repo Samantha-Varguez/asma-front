@@ -34,8 +34,7 @@ function SymptomForm() {
             selectedSymptoms.includes(symptom) ? 1 : 0
         );
         console.log(binaryArray);
-        // Send binaryArray to the backend
-        // Example using fetch:
+        // Enviar binary array a consola
         fetch('/submit-symptoms', {
             method: 'POST',
             headers: {
