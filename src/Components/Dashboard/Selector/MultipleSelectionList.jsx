@@ -43,9 +43,10 @@ const MultipleSelectionList = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    const binaryArray = options.map((symptom) =>
-        selectedOptions.includes(symptom) ? 1 : 0
-    );
+    const binaryArray = options.map((symptom) => ({
+        symptom,
+        value: selectedOptions.includes(symptom) ? 1 : 0
+  }));
     console.log(binaryArray);
     // Send binaryArray to the backend
     // Example using fetch:
