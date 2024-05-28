@@ -40,15 +40,17 @@ const MultipleSelectionList = () => {
   const filteredOptions = options.filter((option) =>
     option.toLowerCase().includes(searchTerm.toLowerCase())
   );
+  
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    const binaryArray = options.map((symptom) => ({
-        symptom,
-        value: selectedOptions.includes(symptom) ? 1 : 0
-  }));
+    const binaryArray = options.map((symptom) => 
+      `"${symptom}":${selectedOptions.includes(symptom) ? 1 : 0}`
+    );
     console.log(binaryArray);
+    //array1.forEach((element) => console.log(element));
     // Send binaryArray to the backend
+
     // Example using fetch:
     fetch('/submit-symptoms', {
         method: 'POST',
