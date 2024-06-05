@@ -21,6 +21,7 @@ const MultipleSelectionList = () => {
   
   const [selectedOptions, setSelectedOptions] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
 
   const handleSelectOption = (e) => {
     const value = e.target.value;
@@ -44,10 +45,20 @@ const MultipleSelectionList = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    const binaryArray = options.map((symptom) => 
+    if (selectedOptions.length < 1) {
+      setErrorMessage('¡Debes seleccionar mínimo 1 síntoma!');
+      return;
+    }
+    if (selectedOptions.length > 8) {
+      setErrorMessage('¡Sólo puedes seleccionar máximo 8 síntomas!');
+      return;
+    }
+    setErrorMessage('');
+    const binaryArray = options.map((symptom) =>
       `"${symptom}":${selectedOptions.includes(symptom) ? 1 : 0}`
     );
     console.log(binaryArray);
+
     //array1.forEach((element) => console.log(element));
     // Send binaryArray to the backend
 
@@ -100,6 +111,9 @@ return (
           ))}
         </ul>
       </div>
+
+      {errorMessage && <div className="error-message">{errorMessage}</div>}
+
 
       <div className="confirmar">
         <button onClick={handleSubmit}>Submit</button>

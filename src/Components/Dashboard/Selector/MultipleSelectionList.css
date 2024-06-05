@@ -15,7 +15,7 @@
   cursor: pointer;
   padding: 10px;
   background-color: #67c7ea;
-  color: blue;
+  color: rgb(255, 255, 255);
   width: 500px;
   position: fixed;
   bottom: 8%;
@@ -65,7 +65,9 @@
   border-radius: 15px;
   height: 25px;
   width: 300px;
+  
 }
+
 
 .options-list {
   height: 200px;
@@ -97,6 +99,10 @@
 .SelectedOptions li {
   font-size: 14px;
 
+}
+
+::placeholder {
+  color: #fff;
 }
 
 .SelectedOptions button {
